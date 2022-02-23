@@ -10,7 +10,7 @@ _config:_
 mapping:
   name: name
   last_name: lastName
-  fullname:
+  full_name:
     $concat: [name, ' ', lastname]
 ```
 
@@ -19,7 +19,7 @@ _input:_
 ```json
 {
   "name": "Jhon",
-  "lastname": "Doe"
+  "lastName": "Doe"
 }
 ```
 
@@ -29,11 +29,11 @@ _output:_
 {
   "name": "Jhon",
   "last_name": "Doe",
-  "fullName": "Jhon Doe"
+  "full_name": "Jhon Doe"
 }
 ```
 
-## Avilable operators
+## Available operators
 
 ### $or
 
