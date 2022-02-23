@@ -38,10 +38,10 @@ export class AdapterService {
       const contextValue = _.get(this.context, value);
       const computedValue = this.getProcessors(operation)(contextValue, value);
       return [fieldName, computedValue];
-    } else {
-      const computedValue = _.get(this.context, value);
-      return [key, computedValue];
     }
+    const computedValue = _.get(this.context, value);
+
+    return [key, computedValue];
   }
 
   getProcessors(operation: string) {
