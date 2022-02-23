@@ -1,7 +1,7 @@
 const YAML = require('yaml');
 const fs = require('fs');
 const user = require('./user.json');
-import { AdapterService } from '../AdapterService';
+import { AdapterService } from '../src/AdapterService';
 
 const functions = {
   fetchRoles(context: any) {

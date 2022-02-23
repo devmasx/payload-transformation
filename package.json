@@ -2,7 +2,7 @@
   "name": "payload-transformation",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/AdapterService.js",
   "directories": {
     "example": "examples"
   },
