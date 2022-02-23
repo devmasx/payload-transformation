@@ -11,4 +11,4 @@ mapping:
   billingAddress:
     $or: [addresses.billing, addresses.main]
   budget_in_cents:
-    $to_cents: [budget]
+    $to_cents: budget

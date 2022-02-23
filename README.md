@@ -116,3 +116,37 @@ function fetchRoles(context) {
 
 const roles = fetchRoles(context);
 ```
+
+### Custom operation
+
+The yaml syntax allow add a custom operation, this custom operation is ussefull when you need a call a function with an specific context value.
+
+Example:
+
+```yaml
+budget: 100
+budget_in_cents:
+  $to_cents: budget
+```
+
+```ts
+const processors = {
+  $to_cents: function (contextValue) {
+    return contextValue * 1000;
+  },
+};
+
+const adapter = new AdapterService(config, context, {
+  processors,
+});
+```
+
+_equivalent:_
+
+```js
+function toCents(value) {
+  return value * 1000;
+}
+
+const budget_in_cents = toCents(context.budget);
+```
