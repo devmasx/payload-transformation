@@ -1,6 +1,6 @@
 # Payload transformation
 
-Using a yaml configuration you can tranform a payload to another payload
+Using a yaml configuration you can transform a payload to another payload
 
 ### Example:
 
