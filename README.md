@@ -33,6 +33,20 @@ _output:_
 }
 ```
 
+## Install
+
+```
+npm install payload-transformation
+```
+
+## Usage
+
+```ts
+import { AdapterService } from 'payload-transformation';
+
+const output = new AdapterService(config, input).run();
+```
+
 ## Available operators
 
 ### $or
@@ -88,12 +102,12 @@ const country = 'US';
 
 Call a function with the context
 
-_Initialization:_
-
 ```yaml
 roles:
   $fnc: fetchRoles
 ```
+
+_Initialization:_
 
 ```ts
 const functions = {
