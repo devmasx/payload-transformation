@@ -1,0 +1,15 @@
+{
+  "id": "a190f1a6-2fb8-77d9-fbb9-9b8a19e441e3",
+  "name": "Jhon",
+  "lastname": "Doe",
+  "budget": 100,
+  "email": "jhonDoe@gmail.com",
+  "addresses": {
+    "main": "Main street, 1",
+    "billing": "Main street, 1"
+  },
+  "avatar": {
+    "url": "https://avatar.com/jhon",
+    "type": "png"
+  }
+}

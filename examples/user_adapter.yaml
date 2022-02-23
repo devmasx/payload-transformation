@@ -1,0 +1,14 @@
+mapping:
+  id: id
+  name: name
+  fullname:
+    $concat: [id, " ", lastname]
+  avatarUrl: avatar.url
+  roles:
+    $fnc: fetchRoles
+  provider:
+    $value: google
+  billingAddress:
+    $or: [addresses.billing, addresses.main]
+  budget_in_cents:
+    $to_cents: [budget]
