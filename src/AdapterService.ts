@@ -45,7 +45,7 @@ export class AdapterService {
   }
 
   getProcessors(operation: string) {
-    const cases = {
+    const processors = {
       $or: (_contextValue, value) =>
         value.find((it) => _.get(this.context, it)),
       $value: (_contextValue, value) => value,
@@ -61,6 +61,6 @@ export class AdapterService {
       },
     };
 
-    return cases[operation] || this.processors[operation];
+    return processors[operation] || this.processors[operation];
   }
 }
